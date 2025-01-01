@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/power"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Pesan Selamat Datang -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang, User!"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Tombol untuk Navigasi ke Katalog -->
+    <Button
+        android:id="@+id/catalogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Catalog"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol About -->
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Contact -->
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/quizButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Go to Rating -->
+    <Button
+        android:id="@+id/ratingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Rating"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Logout -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

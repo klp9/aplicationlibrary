@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/power"
+    android:padding="16dp">
+
+    <!-- Soal -->
+    <TextView
+        android:id="@+id/soalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soal"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Pilihan jawaban -->
+    <RadioGroup
+        android:id="@+id/pilihanRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Tombol Next -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+
+    <!-- Skor -->
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skor: 0"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black" />
+</LinearLayout>

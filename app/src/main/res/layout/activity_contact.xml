@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/power"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/contactTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text" />
+
+    <!-- Form Pesan -->
+    <EditText
+        android:id="@+id/messageInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter your message"
+        android:backgroundTint="@color/input_background"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text"
+        android:padding="12dp"
+        android:inputType="textMultiLine"
+        android:gravity="top|start" />
+
+    <!-- Submit Button with Ripple Effect -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Divider -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atau bisa hubungi lewat sini"
+        android:textColor="@color/primary_text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Social Media Section -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"
+        android:weightSum="3">
+
+        <!-- WhatsApp and Instagram Icons (left aligned) -->
+        <ImageView
+            android:id="@+id/instagramIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Instagram Icon"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/twiterIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Instagram Icon"
+            android:src="@drawable/instagram" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="start">
+
+            <!-- WhatsApp Icon -->
+            <ImageView
+                android:id="@+id/whatsappIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="WhatsApp Icon"
+                android:src="@drawable/whatsapp" />
+        </LinearLayout>
+
+        <!-- Back Button (Right aligned) with Purple Background -->
+        <!-- Align the button to the end (right) -->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@color/purple"
+        android:text="Back"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "495357405029",
+    "project_id": "digitallibraryapp-d83af",
+    "storage_bucket": "digitallibraryapp-d83af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495357405029:android:46a08db77edfdff064638c",
+        "android_client_info": {
+          "package_name": "com.example.digitallibraryapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw-CH9Xw9msLYsu2_dDaDgTqL4FbNVF84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495357405029:android:dc423519ea1e38e864638c",
+        "android_client_info": {
+          "package_name": "com.example.pt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw-CH9Xw9msLYsu2_dDaDgTqL4FbNVF84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
