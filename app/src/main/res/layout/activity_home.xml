@@ -1,68 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/power"
-    android:padding="16dp"
-    android:gravity="center">
+    android:fillViewport="true">
 
-    <!-- Pesan Selamat Datang -->
-    <TextView
-        android:id="@+id/welcomeText"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Selamat Datang, User!"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:layout_marginBottom="24dp" />
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
 
-    <!-- Tombol untuk Navigasi ke Katalog -->
-    <Button
-        android:id="@+id/catalogButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Go to Catalog"
-        android:layout_marginBottom="16dp" />
+        <!-- Header Section -->
 
-    <!-- Tombol About -->
-    <Button
-        android:id="@+id/aboutButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="About"
-        android:layout_marginBottom="16dp" />
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/aplikasi"/>
 
-    <!-- Tombol Contact -->
-    <Button
-        android:id="@+id/contactButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Contact"
-        android:layout_marginBottom="16dp" />
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang!"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
 
-    <Button
-        android:id="@+id/quizButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Start Quiz"
-        android:layout_marginBottom="16dp" />
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jelajahi menu kami dan temukan fitur menarik!"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp" />
 
-    <!-- Tombol Go to Rating -->
-    <Button
-        android:id="@+id/ratingButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Go to Rating"
-        android:layout_marginBottom="16dp" />
+        <!-- Menu Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
 
-    <!-- Tombol Logout -->
-    <Button
-        android:id="@+id/logoutButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logout"
-        android:layout_marginBottom="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-</LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/catalogButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pergi ke Katalog"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/aboutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/contactButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kontak"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/quizButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mulai Kuis"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ratingButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beri Penilaian"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/logoutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keluar"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="@color/secondaryColor"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Footer Section -->
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2025 Perpustakaan Digital. Semua Hak Dilindungi."
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

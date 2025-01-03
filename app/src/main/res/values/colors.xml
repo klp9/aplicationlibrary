@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-        <!-- Background dan Aksen -->
+    <resources>
+        <color name="black">#FF000000</color>
+        <color name="white">#FFFFFFFF</color>
         <color name="background_color">#F5F5F5</color> <!-- Abu-abu terang -->
         <color name="primary_button">#4CAF50</color> <!-- Hijau profesional -->
         <color name="input_background">#E0E0E0</color> <!-- Abu-abu input -->
         <color name="purple">#9B4DCA</color>
-
-        <!-- Teks -->
         <color name="primary_text">#212121</color> <!-- Hitam -->
         <color name="secondary_text">#757575</color>
+        <color name="yellow">#FFEB3B</color>
+        <color name="gray">#808080</color>
+    <color name="primaryColor">#4CAF50</color>
+    <color name="primaryDarkColor">#388E3C</color>
+    <color name="secondaryColor">#F44336</color>
+    <color name="secondaryDarkColor">#D32F2F</color>
 
-</resources>
+    <!-- Background and Text Colors -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textPrimaryColor">#212121</color>
+    <color name="textSecondaryColor">#757575</color>
+    </resources>

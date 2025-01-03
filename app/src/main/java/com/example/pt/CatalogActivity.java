@@ -17,19 +17,16 @@ public class CatalogActivity extends AppCompatActivity {
         Button searchBooksButton = findViewById(R.id.searchBooksButton);
         Button categoryButton = findViewById(R.id.categoryButton);
 
-        // Navigasi ke halaman Detail Buku
         bookDetailButton.setOnClickListener(v -> {
             Intent intent = new Intent(CatalogActivity.this, BookDetailActivity.class);
             startActivity(intent);
         });
 
-        // Navigasi ke halaman Pencarian Buku
         searchBooksButton.setOnClickListener(v -> {
             Intent intent = new Intent(CatalogActivity.this, SearchBooksActivity.class);
             startActivity(intent);
         });
 
-        // Navigasi ke halaman Kategori Buku
         categoryButton.setOnClickListener(v -> {
             Intent intent = new Intent(CatalogActivity.this, CategoryActivity.class);
             startActivity(intent);

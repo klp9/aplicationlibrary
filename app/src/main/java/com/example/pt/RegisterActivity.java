@@ -11,33 +11,28 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterActivity extends AppCompatActivity {
-    private FirebaseAuth mAuth; // Firebase Authentication Instance
-    private EditText emailField, passwordField, confirmPasswordField; // Input fields
+    private FirebaseAuth mAuth;
+    private EditText emailField, passwordField, confirmPasswordField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register); // Layout untuk register
+        setContentView(R.layout.activity_register);
 
-        // Inisialisasi Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        // Menghubungkan elemen layout ke variabel Java
         emailField = findViewById(R.id.emailField);
         passwordField = findViewById(R.id.passwordField);
         confirmPasswordField = findViewById(R.id.confirmPasswordField);
         Button registerButton = findViewById(R.id.registerButton);
 
-        // Listener untuk tombol Register
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Ambil input dari user
                 String email = emailField.getText().toString().trim();
                 String password = passwordField.getText().toString().trim();
                 String confirmPassword = confirmPasswordField.getText().toString().trim();
 
-                // Validasi input
                 if (email.isEmpty()) {
                     emailField.setError("Email is required");
                     emailField.requestFocus();
@@ -51,23 +46,19 @@ public class RegisterActivity extends AppCompatActivity {
                     confirmPasswordField.setError("Passwords do not match");
                     confirmPasswordField.requestFocus();
                 } else {
-                    // Lakukan proses pendaftaran
                     registerUser(email, password);
                 }
             }
         });
     }
 
-    // Metode untuk register pengguna baru dengan Firebase Authentication
     private void registerUser(String email, String password) {
         mAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this, task -> {
                 if (task.isSuccessful()) {
-                    // Pendaftaran berhasil
                     Toast.makeText(RegisterActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
                     finish(); // Kembali ke LoginActivity
                 } else {
-                    // Jika pendaftaran gagal
                     Toast.makeText(RegisterActivity.this, "Registration failed. Try again.", Toast.LENGTH_SHORT).show();
                 }
             });

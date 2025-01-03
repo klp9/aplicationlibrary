@@ -6,6 +6,7 @@
     android:background="@drawable/power"
     android:padding="16dp">
 
+    <!-- Input untuk pencarian -->
     <EditText
         android:id="@+id/searchInput"
         android:layout_width="match_parent"
@@ -13,14 +14,28 @@
         android:hint="Enter book name"
         android:inputType="text" />
 
+    <!-- Tombol untuk memulai pencarian -->
     <Button
         android:id="@+id/searchButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Search" />
 
+    <!-- ListView untuk hasil pencarian -->
     <ListView
         android:id="@+id/searchResultsListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- ImageView untuk menampilkan gambar buku yang dipilih -->
+    <ImageView
+        android:id="@+id/bookImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="Selected book image"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

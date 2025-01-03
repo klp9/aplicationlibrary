@@ -34,7 +34,7 @@ public class RecommendationsAdapter extends ArrayAdapter<Book> {
 
         titleTextView.setText(currentBook.getTitle());
         authorTextView.setText("By: " + currentBook.getAuthor());
-        genreTextView.setText("Genre: " + currentBook.getGenre());
+        genreTextView.setText("kelompok9: " + currentBook.getGenre());
 
         return convertView;
     }

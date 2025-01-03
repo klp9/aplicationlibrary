@@ -3,10 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/insert"
+    android:background="@drawable/power"
     android:padding="16dp">
 
-    <!-- ImageView untuk menampilkan gambar buku -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -15,7 +14,7 @@
         android:contentDescription="Book Image"
         android:scaleType="fitCenter" />
 
-    <!-- Tombol Pinjam -->
+
     <Button
         android:id="@+id/borrowButton"
         android:layout_width="match_parent"

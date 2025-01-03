@@ -18,30 +18,24 @@ public class BookReviewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_book_review);  // Pastikan layout yang benar digunakan
+        setContentView(R.layout.activity_book_review);
 
-        // Inisialisasi elemen UI dengan referensi ID
         ratingBar = findViewById(R.id.ratingBar);
         reviewEditText = findViewById(R.id.reviewEditText);
         submitReviewButton = findViewById(R.id.submitReviewButton);
 
-        // Menangani aksi klik tombol Submit Review
         submitReviewButton.setOnClickListener(v -> {
-            // Mendapatkan rating dan review yang dimasukkan pengguna
             float rating = ratingBar.getRating();
             String review = reviewEditText.getText().toString();
 
-            // Cek apakah rating dan review sudah diisi
             if (rating == 0) {
                 Toast.makeText(BookReviewActivity.this, "Please rate this book", Toast.LENGTH_SHORT).show();
             } else if (review.isEmpty()) {
                 Toast.makeText(BookReviewActivity.this, "Please write a review", Toast.LENGTH_SHORT).show();
             } else {
-                // Simpan rating dan review (misalnya ke SharedPreferences atau Firebase)
-                // Untuk demo ini, kita akan menampilkan Toast
+
                 Toast.makeText(BookReviewActivity.this, "Review Submitted", Toast.LENGTH_SHORT).show();
 
-                // Reset form setelah submit
                 ratingBar.setRating(0);
                 reviewEditText.setText("");
             }

@@ -1,30 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/power"
     android:padding="16dp">
 
+    <!-- Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose Book Category"
-        android:textSize="24sp"
+        android:text="Silahkan Pilih Categori Buku"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
 
-    <!-- Tombol untuk memilih kategori -->
-    <Button
-        android:id="@+id/fictionButton"
+    <!-- CardView for Fiction Button -->
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fiction" />
+        android:layout_marginBottom="16dp">
 
-    <Button
-        android:id="@+id/nonFictionButton"
+        <Button
+            android:id="@+id/fictionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fiction"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Non-Fiction Button -->
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Non-Fiction" />
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/nonFictionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-Fiction"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

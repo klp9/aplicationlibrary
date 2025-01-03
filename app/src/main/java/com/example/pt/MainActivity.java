@@ -11,10 +11,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.startButton).setOnClickListener(v -> {
-            // Navigasi ke HomeActivity
             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
             startActivity(intent);
-            finish();  // Menyelesaikan MainActivity agar tidak kembali ke halaman sebelumnya
+            finish();
         });
     }
 }
