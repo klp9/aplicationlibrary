@@ -41,6 +41,14 @@
             android:name=".BookDetailActivity"
             android:exported="true" />
         <activity android:name=".RecommendationsActivity" />
+        <activity android:name=".QuizActivity"/>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".BookReviewActivity" />
+        <activity android:name=".SearchBooksActivity"></activity>
+        <activity android:name=".CategoryActivity"></activity>
+        <activity android:name=".BookListActivity"></activity>
+        <activity android:name=".BookInfoActivity" />
     </application>
 
 </manifest>
